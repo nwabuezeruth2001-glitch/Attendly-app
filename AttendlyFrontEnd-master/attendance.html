@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance — Attendly</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <a class="sidebar-brand" href="dashboard.html"><span class="mini-logo">🎓</span><strong>Attendly</strong></a>
+    <nav class="sidebar-nav">
+      <div class="nav-section">Main Menu</div><a class="nav-item " href="dashboard.html"><span class="nav-icon">▦</span>Dashboard</a><a class="nav-item " href="students.html"><span class="nav-icon">♙</span>Students</a><a class="nav-item active" href="attendance.html"><span class="nav-icon">✓</span>Attendance</a><a class="nav-item " href="attendance-history.html"><span class="nav-icon">◷</span>Attendance History</a><a class="nav-item " href="reports.html"><span class="nav-icon">▤</span>Reports</a><a class="nav-item " href="settings.html"><span class="nav-icon">⚙</span>Settings</a>
+    </nav>
+    <div class="sidebar-user"><div class="avatar">AU</div><div class="user-meta"><strong>Admin User</strong><span>Administrator</span></div></div>
+  </aside>
+  <div class="overlay"></div>
+  <main class="main">
+    <header class="topbar">
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <div class="search-wrap"><span>⌕</span><input class="global-search" placeholder="Search anything..."></div>
+      <div class="topbar-spacer"></div>
+      <button class="top-icon">♧<i class="dot"></i></button>
+      <div class="profile-menu"><div class="avatar">AU</div><span>Admin⌄</span></div>
+    </header>
+    
+<section class="page"><div class="page-head"><div><h1>Take Attendance</h1><p>Mark attendance for your students</p></div><button class="btn btn-primary" data-demo="Attendance saved successfully!">Save Attendance</button></div>
+<div class="card"><div class="card-head"><div style="display:flex;gap:10px;align-items:center"><div><label class="filter-label">Date</label><input class="form-control" style="height:34px" type="date" value="2026-09-19"></div><div><label class="filter-label">Search student</label><input class="form-control" style="height:34px" placeholder="Search..."></div></div></div>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>Student ID</th><th>Name</th><th>Status</th><th>Action</th></tr></thead><tbody>
+<tr><td>1</td><td>CSC001</td><td>John Doe</td><td><span class="badge present">Present</span></td><td><input type="checkbox" checked></td></tr>
+<tr><td>2</td><td>BUS002</td><td>Mary Jane</td><td><span class="badge absent">Absent</span></td><td><input type="checkbox"></td></tr>
+<tr><td>3</td><td>MAT003</td><td>David Smith</td><td><span class="badge present">Present</span></td><td><input type="checkbox" checked></td></tr>
+<tr><td>4</td><td>PHY004</td><td>Sarah Wilson</td><td><span class="badge present">Present</span></td><td><input type="checkbox" checked></td></tr>
+<tr><td>5</td><td>CSC005</td><td>James Brown</td><td><span class="badge absent">Absent</span></td><td><input type="checkbox"></td></tr>
+</tbody></table></div>
+<div class="card-pad" style="display:flex;justify-content:space-between;align-items:center"><label class="check"><input type="checkbox" data-select-all="table tbody input[type=checkbox]"> Select All</label><button class="btn btn-primary" data-demo="Attendance saved successfully!">Save Attendance</button></div></div></section>
+  </main>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>

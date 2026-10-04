@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Student — Attendly</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <a class="sidebar-brand" href="dashboard.html"><span class="mini-logo">🎓</span><strong>Attendly</strong></a>
+    <nav class="sidebar-nav">
+      <div class="nav-section">Main Menu</div><a class="nav-item " href="dashboard.html"><span class="nav-icon">▦</span>Dashboard</a><a class="nav-item active" href="students.html"><span class="nav-icon">♙</span>Students</a><a class="nav-item " href="attendance.html"><span class="nav-icon">✓</span>Attendance</a><a class="nav-item " href="attendance-history.html"><span class="nav-icon">◷</span>Attendance History</a><a class="nav-item " href="reports.html"><span class="nav-icon">▤</span>Reports</a><a class="nav-item " href="settings.html"><span class="nav-icon">⚙</span>Settings</a>
+    </nav>
+    <div class="sidebar-user"><div class="avatar">AU</div><div class="user-meta"><strong>Admin User</strong><span>Administrator</span></div></div>
+  </aside>
+  <div class="overlay"></div>
+  <main class="main">
+    <header class="topbar">
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <div class="search-wrap"><span>⌕</span><input class="global-search" placeholder="Search anything..."></div>
+      <div class="topbar-spacer"></div>
+      <button class="top-icon">♧<i class="dot"></i></button>
+      <div class="profile-menu"><div class="avatar">AU</div><span>Admin⌄</span></div>
+    </header>
+    
+<section class="page"><div class="page-head"><div><h1>Add New Student</h1><p>Fill in the student details below</p></div></div>
+<div class="card card-pad form-card"><form onsubmit="event.preventDefault();location.href='students.html'"><div class="form-grid">
+<div class="form-group"><label class="form-label">Student ID</label><input class="form-control" placeholder="e.g. CSC001" required></div>
+<div class="form-group"><label class="form-label">Full Name</label><input class="form-control" placeholder="Enter full name" required></div>
+<div class="form-group"><label class="form-label">Email Address</label><input class="form-control" type="email" placeholder="student@example.com"></div>
+<div class="form-group"><label class="form-label">Department</label><select class="form-control"><option>Select department</option><option>Computer Science</option><option>Business Administration</option><option>Mathematics</option><option>Physics</option></select></div>
+<div class="form-group"><label class="form-label">Level</label><select class="form-control"><option>Select level</option><option>ND1</option><option>ND2</option><option>HND1</option><option>HND2</option></select></div>
+<div class="form-group"><label class="form-label">Status</label><select class="form-control"><option>Active</option><option>Inactive</option></select></div>
+</div><div class="form-actions"><a href="students.html" class="btn btn-light">Cancel</a><button class="btn btn-primary">Save Student</button></div></form></div></section>
+  </main>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
